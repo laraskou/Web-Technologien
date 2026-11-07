@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf 8" />
+    <title>Study planner</title>
+    <link rel="icon" type="image" href="assets/img/favicon.png" />
+  </head>
+  <body>
+    <a><img src="assets/img/logo1.png" alt="logo" height="150px" /></a>
+    <header><h1>Study planner</h1></header>
+    <nav>
+      <a href="index.html">Startseite</a> |
+      <a href="plan.html">Semesterpläne</a> | <a href="kurs.html">Kurse</a> |
+      <a href="plan-neu-schritt1.html">Neuer Semesterplan</a>
+    </nav>
+
+    <main>
+      <h2>Neuen Semesterplan anlegen</h2>
+
+      <form action="index.html" method="post">
+        <fieldset>
+          <legend>Basisdaten</legend>
+
+          <p>Studiengang: Informatik - VR Data Science (StPO 2026)</p>
+
+          <p>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              maxlength="150"
+              pattern="[a-zA-Z0-9\-]+"
+              placeholder="z. B. PI-Plan-WiSe26"
+              title="Ein Wort aus Buchstaben (a-z, A-Z), Ziffern und Bindestrichen, ohne Leerzeichen, maximal 150 Zeichen" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <label for="name">Semester:</label>
+          <select id="studiengang" name="semester" required>
+            <option id="semester-wise" value="Wintersemester">
+              Wintersemester
+            </option>
+            <option id="semester-sose" value="Sommersemester">
+              Sommersemester
+            </option>
+          </select>
+          <label for="jahr">Jahr:</label>
+          <input
+            type="number"
+            id="jahr"
+            name="jahr"
+            required
+            min="1900"
+            max="2099"
+            step="1"
+            value="2026"
+            placeholder="z. B. 2026" />
+          <legend>Semester</legend>
+        </fieldset>
+
+        <fieldset>
+          <legend>Kurse</legend>
+          <p>
+            <input type="checkbox" id="kurs-eprog" name="kurse" value="eprog" />
+            <label for="kurs-eprog">
+              Einführung in die Programmierung (V, Montag, 7.-8. Stunde)
+            </label>
+
+            <br>
+
+            <input type="checkbox" id="kurs-aup" name="kurse" value="aup" />
+          <label for="kurs-aup">
+            Algorithmen und Programmierung (V, Montag, 9.-10. Stunde)
+          </label>
+
+          <br>
+
+          <input type="checkbox" id="kurs-rub1" name="kurse" value="rub1" />
+          <label for="kurs-rub1">
+            Rechnerstrukturen und Betriebssysteme 1 (V, Dienstag, 1.-2. Stunde)
+          </label>
+
+          <br>
+
+          <input
+            type="checkbox"
+            id="kurs-inf-mathe1"
+            name="kurse"
+            value="inf-mathe1" />
+          <label for="kurs-inf-mathe1">
+            Mathematik für Informatik 1 (V, Dienstag, 3.-4. Stunde)
+          </label>
+          
+          <br>
+
+          <input type="checkbox" id="kurs-ti" name="kurse" value="ti" />
+          <label for="kurs-ti">
+            Theoretische Informatik (V, Mittwoch, 7.-8. Stunde)
+          </label>
+
+          <br>
+
+          <input
+            type="checkbox"
+            id="kurs-it-infra"
+            name="kurse"
+            value="it-infra" />
+          <label for="kurs-it-infra">
+            IT-Infrastruktur (V, Donnerstag, 3.-4. Stunde)
+          </label>
+        </fieldset>
+          </p>
+
+        <button type="submit">Semesterplan anlegen</button>
+      </form>
+
+      <aside>
+        <h2>Aktuelle Meldungen</h2>
+        <ul>
+          <li>
+            05.11.2026: Am Dienstag, 10.11.2026 findet die
+            Informationsveranstaltung zum Praxissemester für Studierende der
+            Wirtschafts- und Medizininformatik im Raum A.E.03 von 13:35 bis
+            14:15 Uhr statt.
+          </li>
+          <li>
+            04.11.2026: Beginn der Prüfungsanmeldephase: ab sofort können Sie
+            sich für die Prüfungen des aktuellen Semestersanmelden. Bitte
+            beachten Sie, dass die Anmeldung nur bis 07.12.2026 möglich ist.
+          </li>
+          <li>
+            15.10.2026: Die Vorlesung zu <q>Einführung in die Programmierung</q>
+            findet am kommenden Montag krankeitsbedingt nicht statt.
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Study planner. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

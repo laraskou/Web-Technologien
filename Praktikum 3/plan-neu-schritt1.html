@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf 8" />
+    <title>Study planner</title>
+    <link rel="icon" type="image" href="assets/img/favicon.png" />
+  </head>
+  <body>
+    <a><img src="assets/img/logo1.png" alt="logo" height="150px" /></a>
+    <header><h1>Study planner</h1></header>
+    <nav>
+      <a href="index.html">Startseite</a> |
+      <a href="plan.html">Semesterpläne</a> | <a href="kurs.html">Kurse</a> |
+      <a href="plan-neu-schritt1.html">Neuer Semesterplan</a>
+    </nav>
+
+    <main>
+      <h2>Neuen Semesterplan anlegen</h2>
+
+      <form action="plan-neu-schritt2.html" method="get">
+        <fieldset>
+          <legend>Studiengang auswählen</legend>
+
+          <label for="studiengang">Studiengang:</label>
+          <select id="studiengang" name="studiengang" required>
+            <option value="" disabled selected>
+              Einen Studiengang auswählen …
+            </option>
+            <optgroup label="Informatik">
+              <option value="INPBPI">
+                Informatik - VR Praktische Informatik (StgPO 2026)
+              </option>
+              <option value="INPBPI2019">
+                Informatik - VR Praktische Informatik (StgPO 2019)
+              </option>
+              <option value="INPBDS">
+                Informatik - VR Data Science (StgPO 2026)
+              </option>
+              <option value="INPBDS2019">
+                Informatik - VR Data Science (StgPO 2019)
+              </option>
+              <option value="INPBES">
+                Informatik - VR Eingebettete Systeme (StgPO 2026)
+              </option>
+              <option value="INPBTI">
+                Informatik - VR Technische Informatik (StgPO 2019)
+              </option>
+            </optgroup>
+            <optgroup label="Informatik Dual">
+              <option value="INDBST">
+                Informatik Dual - VR Softwaretechnik (StgPO 2022)
+              </option>
+              <option value="INDBNS">
+                Informatik Dual - VR Netztechnik und Systemintegration (StgPO
+                2022)
+              </option>
+              <option value="INDBDM">
+                Informatik Dual - VR Digitalisierungsmanagement (StgPO 2022)
+              </option>
+            </optgroup>
+            <optgroup label="Medizinische Informatik">
+              <option value="MIPB">Medizinische Informatik (StgPO 2026)</option>
+              <option value="MIPB2019">
+                Medizinische Informatik (StgPO 2019)
+              </option>
+              <option value="MIDB">
+                Medizinische Informatik Dual (StgPO 2021)
+              </option>
+            </optgroup>
+            <optgroup label="Wirtschaftsinformatik">
+              <option value="WIPB">Wirtschaftsinformatik (StgPO 2018)</option>
+            </optgroup>
+          </select>
+        </fieldset>
+
+        <button type="submit">Weiter</button>
+      </form>
+
+      <aside>
+        <h2>Aktuelle Meldungen</h2>
+        <ul>
+          <li>
+            05.11.2026: Am Dienstag, 10.11.2026 findet die
+            Informationsveranstaltung zum Praxissemester für Studierende der
+            Wirtschafts- und Medizininformatik im Raum A.E.03 von 13:35 bis
+            14:15 Uhr statt.
+          </li>
+          <li>
+            04.11.2026: Beginn der Prüfungsanmeldephase: ab sofort können Sie
+            sich für die Prüfungen des aktuellen Semestersanmelden. Bitte
+            beachten Sie, dass die Anmeldung nur bis 07.12.2026 möglich ist.
+          </li>
+          <li>
+            15.10.2026: Die Vorlesung zu <q>Einführung in die Programmierung</q>
+            findet am kommenden Montag krankeitsbedingt nicht statt.
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Study planner. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
